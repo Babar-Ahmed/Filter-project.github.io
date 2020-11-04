@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="=width=device-width,initial-scale=1.0">
+	<title>Project</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+<!--Main Css-->
+<link rel="stylesheet" type="text/css" href="css/design.css">
+<!---Google fonts-->
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div>
+	<h1 class="text-center p-5">Tech Courses | JavaScript Project |</h1>
+</div>
+<div class="row">
+	<div class="col-lg mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap" >
+		<a href="#" class="btn btn-primary btn-black text-uppercase filter-btn m-2 " data-filter="all">All</a>
+		<a href="#" class="btn btn-success btn-black text-uppercase filter-btn m-2" data-filter="webdevelopment">Web Developmemt</a>
+	<a href="#" class="btn btn-danger btn-black text-uppercase filter-btn m-2" data-filter="webdesign">Web Designing</a>
+		<a href="#" class="btn btn-primary btn-black text-uppercase filter-btn m-2" data-filter="python">Python</a>
+<a href="#" class="btn btn-warning btn-black text-uppercase filter-btn m-2" data-filter="javascript">javascript</a>
+
+
+	</div>
+</div>
+
+
+
+	<!--serach box---->
+	<div class="row">
+<div class="col-10 mx-auto col-md-6">
+	<form>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text serach-box" id="serach-icon"><i class="fas fa-search"></i></span>
+			</div>
+			<input type="text" name="" class="form-control" placeholder="Course..." id="search-item">
+		</div>
+	</form>
+	</div>
+</div>
+
+
+<!---Store items=---->
+<div class="container-fluid">
+<div class="row" id="store-items">
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item webdevelopment" data-item="webdevelopment">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/ww.jpg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fas fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">Web Development</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+			<button class="btn btn-primary" data-toggle="modal" data-target="#mylogin">Details</button>
+<div class="modal" id="mylogin">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center">About This Course</h5>
+					<button class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+							<img src="img/ww.jpg" class="img-thumbnail w-50" alt="">
+							<div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button class="btn btn-primary">Buy</button>
+				</div>
+			</div>
+		</div>
+	</div><!--modal end--->
+
+		</div>
+
+	</div>
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item webdevelopment" data-item="webdevelopment">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/web.jpeg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">Web Development</h5>
+			<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+			<!--Modal--->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#mylogin1">Details</button>
+<div class="modal" id="mylogin1">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center">About This Course</h5>
+					<button class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+							<img src="img/web.jpeg" class="w-50  img-thumbnail store-img" alt="">
+							<div>
+								<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button class="btn btn-primary">Buy</button>
+				</div>
+			</div>
+		</div>
+	</div><!--modal end--->
+
+		</div>
+
+	</div>
+
+
+	
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item webdesign" data-item="webdesign">
+		<div class="card">
+			<div class="img-container">
+				<img src="img/web223.jpg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">Web Design & Devlopment</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+			<!--Modal--->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#mylogin2">Details</button>
+<div class="modal" id="mylogin2">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center">About This Course</h5>
+					<button class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+							<img src="img/web223.jpg" class="w-50  img-thumbnail store-img" alt="">
+							<div>
+								<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button class="btn btn-primary">Buy</button>
+				</div>
+			</div>
+		</div>
+	</div><!--modal end--->
+
+		</div>
+
+	</div>
+
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item python" data-item="python">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/python.jpg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">Programming</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item python" data-item="python">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/p3.jpg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">programming</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item python" data-item="python">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/pyt.jpg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">Programming</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="javascript">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/js1.jpg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">Programming</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="javascript">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/js2.jpg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">programming</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item javascript" data-item="javascript">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/react.png" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">programming</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item webdevelopment" data-item="webdevelopment">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/webdev1.jpg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">Development</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item webdevelopmemt" data-item="webdevelopment">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/webdev2.jpg" class="card-img-top store-img img-thumbnail" alt="">
+				<span class="store-item-icon">
+					<i class="fa -shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">Development</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+	<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item webdesign" data-item="webdesign">
+		<div class="card">
+			<div class="img-container ">
+				<img src="img/web22.jpg" class="card-img-top img-thumbnail store-img" alt="">
+				<span class="store-item-icon">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+			</div>
+
+			<div class="card-body">
+				<div class="card-text d-flex justify-content-between text-capitalize">
+					<h5 id="store-item-name">Development</h5>
+					<h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+</div><!--row div end-->
+
+</div><!---container div--->
+
+
+
+
+<!--footer---->
+
+<footer class="page-footer font-small teal pt-4 bg-primary">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left text-center">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-capitalize font-weight-bold text-center">Babar Qureshi</h5>
+        <p class="text-center">Front End Web Developer and Designer</p>
+
+      </div>
+      <!-- Grid column -->
+
+     
+  </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a class="btn btn-success" href="https://freetechcourse.com/">freetechcourse.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!--jquery-->
+<script src="js/jquery-3.5.0.min.js"></script>
+<!--bootstrap js-->
+<script src="js/bootstrap.min.js"></script>
+<!--font awesome -->
+<script src="js/all.js"></script>
+<!---main javascript---->
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+:root{
+cyan:#01B6E1;
+lightyelow:#E9D758;
+
+}
+body{
+	font-family: "Charm",'cursive';
+	color:black;
+	background: rgba(0,0,0,0.6);
+}
+h1{
+	background-color:#E6E6E6;
+}
+img{
+	
+	height: 100px;
+	box-shadow: 0 0 10px black;
+
+}
+img:hover{
+	transition: 1s;
+	background: rgba(0,0,0,0.6);
+	border:10px solid #a8b2bb;
+}
+.sortBtn a{
+width:200px;
+cursor: pointer;
+}
+.img-contain{
+width:400px;
+}
